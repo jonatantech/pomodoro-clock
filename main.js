@@ -1,15 +1,17 @@
 const timer = {
     pomodoro: 25,
     shortBreak: 5,
-    longBreak: 15,
+    longBreak: 25,
     longBreakInterval: 4,
     sessions: 0
   };
   
   let interval;
   
+  const buttonSound = new Audio('button-sound.mp3');
   const mainButton = document.getElementById('js-btn');
   mainButton.addEventListener('click', () => {
+    buttonSound.play();
     const { action } = mainButton.dataset;
     if (action === 'start') {
       startTimer();
@@ -65,6 +67,7 @@ const timer = {
             default:
               switchMode('pomodoro');
           }
+          document.querySelector(`[data-sound="${timer.mode}"]`).play();
     
           startTimer();
 
@@ -89,6 +92,10 @@ const timer = {
     const sec = document.getElementById('js-seconds');
     min.textContent = minutes;
     sec.textContent = seconds;
+
+    const text = 
+        timer.mode ==='pomodoro' ? 'Get back to work!' : 'Take a break';
+        document.title = `${minutes}:${seconds} - ${text}`;
 
     const progress = document.getElementById('js-progress');
     progress.value = timer[timer.mode] * 60 - timer.remainingTime.total;
@@ -124,5 +131,22 @@ const timer = {
   }
   
   document.addEventListener('DOMContentLoaded', () => {
-    switchMode('pomodoro');
+     // Check if the browser supports notifications
+  if ('Notification' in window) {
+    // If notification permissions have neither been granted or denied
+    if (Notification.permission !== 'granted' && Notification.permission !== 'denied') {
+      // ask the user for permission
+      Notification.requestPermission().then(function(permission) {
+        // If permission is granted
+        if (permission === 'granted') {
+          // Create a new notification
+          new Notification(
+            "Hey! You'll be notified everytime each session begins"
+          );
+        }
+      });
+    }
+  }
+
+  switchMode('pomodoro');
   });

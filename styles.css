@@ -21,6 +21,28 @@ body {
   user-select: none;
 }
 
+.main-headline {
+  color:#fff;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  text-align: center;
+  
+}
+
+.sub-headline {
+  color:#fff;
+  position: absolute;
+  top: 23%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  text-align: center;
+  
+}
+
 progress {
   border-radius: 2px;
   width: 100%;
@@ -47,6 +69,7 @@ progress::-webkit-progress-value {
 }
 
 .clock {
+  color:#fff;
   margin-top: 50px;
   margin-bottom: 30px;
   font-size: 15rem;
