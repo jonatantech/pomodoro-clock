@@ -23,7 +23,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   user-select: none;
   display: flex;
- 
+
 }
 
 .main {
@@ -47,7 +47,7 @@ body {
   top: 23.5%;
   left: 50%;
   transform: translate(-50%, -50%);
-  
+
   text-align: center;
 }
 
@@ -176,6 +176,8 @@ progress::-webkit-progress-value {
 @media screen and (max-width: 664px) {
   .clock {
     font-size: 8rem;
+    margin-top: 10px;
+    margin-bottom: 10px; 
   }
 
   .main-button {
@@ -184,17 +186,30 @@ progress::-webkit-progress-value {
 
   .main-headline {
     top: 20%;
-    left: 50%;
   }
-  
+
   .sub-headline {
     top: 26%;
-    left: 50%;
   }
-  
+
 
 }
 
+@media screen and (max-width: 664px) {
+  .main-headline {
+    top: 15%;
+  }
+
+  .sub-headline {
+    top: 25%;
+  }
+
+  .clock {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+}
 
 
 .container-explanation {
