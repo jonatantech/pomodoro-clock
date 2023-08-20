@@ -12,9 +12,9 @@ html {
 }
 
 :root {
-  --pomodoro: #DCE0D9;
-  --shortBreak: #FBF6EF;
-  --longBreak: #EAD7C3;
+  --pomodoro: #7ecbfa;
+  --shortBreak: #fadbaf;
+  --longBreak: #d1f6a9;
 }
 
 body {
@@ -177,7 +177,7 @@ progress::-webkit-progress-value {
   .clock {
     font-size: 8rem;
     margin-top: 10px;
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
   }
 
   .main-button {
@@ -191,17 +191,15 @@ progress::-webkit-progress-value {
   .sub-headline {
     top: 26%;
   }
-
-
 }
 
-@media screen and (max-width: 664px) {
+@media screen and (max-width: 375px) {
   .main-headline {
-    top: 15%;
+    top: 10%;
   }
 
   .sub-headline {
-    top: 25%;
+    top: 10%;
   }
 
   .clock {
@@ -209,8 +207,36 @@ progress::-webkit-progress-value {
     margin-bottom: 10px;
   }
 
+  .timer {
+    top: 50%;
+  }
 }
 
+@media screen and (max-width: 390px) {
+  .main-headline {
+    top: 15%;
+  }
+
+  .sub-headline {
+    top: 28%;
+  }
+
+  .clock {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .timer {
+    top: 60%;
+  }
+
+  .mode-button {
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+
+ 
+}
 
 .container-explanation {
 
