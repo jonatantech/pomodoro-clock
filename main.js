@@ -1,7 +1,7 @@
 const timer = {
     pomodoro: 25,
     shortBreak: 5,
-    longBreak: 25,
+    longBreak: 15,
     longBreakInterval: 4,
     sessions: 0
   };
@@ -45,7 +45,7 @@ const timer = {
     if (timer.mode === 'pomodoro') timer.sessions++;
   
     mainButton.dataset.action = 'stop';
-    mainButton.textContent = 'stop';
+    mainButton.textContent = 'Pause ⏸️';
     mainButton.classList.add('active');
   
     interval = setInterval(function() {
@@ -79,7 +79,7 @@ const timer = {
     clearInterval(interval);
 
     mainButton.dataset.action = 'start';
-    mainButton.textContent = 'start';
+    mainButton.textContent = 'Resume ▶️';
     mainButton.classList.remove('active');
   }
   
@@ -150,3 +150,9 @@ const timer = {
 
   switchMode('pomodoro');
   });
+
+    // Get the current year
+    const currentYear = new Date().getFullYear();
+
+    // Update the content of the span with the current year
+    document.getElementById('currentYear').textContent = currentYear;

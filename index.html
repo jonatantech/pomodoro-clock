@@ -7,11 +7,12 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Pomodoro Clock</title>
   <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="icons8-tomato-32.png" type="image/x-icon">
 </head>
 
 <body>
-  <h1 class="main-headline">Pomodoro Clock</h1>
-  <span class="sub-headline">Let's beat those pending task! 😉</span>
+ <h1 class="main-headline">🍅Pomodoro Clock</h1>
+  <span class="sub-headline">Let's beat those pending tasks!</span>
   <main class="app">
     <progress id="js-progress" value="0"></progress>
     <div class="progress-bar"></div>
@@ -33,11 +34,20 @@
         <span id="js-seconds">00</span>
       </div>
       <button class="main-button" data-action="start" id="js-btn">
-        Start
+        Start ▶️
       </button>
     </div>
+    <!---<div class="explanation">
+      <h3>What is the Pomodoro Technique</h3>
+      <p>Is a time management method developed by Francesco Cirillo in the late 1980s. It uses a kitchen timer to break work into intervals, typically 25 minutes in length, separated by short breaks. Each interval is known as a pomodoro, from the Italian word for tomato, after the tomato-shaped kitchen timer Cirillo used as a university student. Source: <a href="https://en.wikipedia.org/wiki/Pomodoro_Technique" target="_blank">Wikipedia</a>.</p>
+    </div> --->
+    <footer>
+      <p>&copy; <span id="currentYear"></span> Pomodoro Clock | All rights reserved.</p>
+    <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
   </main>
-  <div class="hidden">
+  
+    <div class="hidden">
     <audio src="backtowork.mp3" data-sound="pomodoro"></audio>
     <audio src="break.mp3" data-sound="shortBreak"></audio>
     <audio src="break.mp3" data-sound="longBreak"></audio>
