@@ -186,6 +186,8 @@ progress::-webkit-progress-value {
 
   .main-headline {
     top: 20%;
+    font-size: 25px;
+    width: 70%;
   }
 
   .sub-headline {
@@ -196,6 +198,8 @@ progress::-webkit-progress-value {
 @media screen and (max-width: 375px) {
   .main-headline {
     top: 10%;
+    font-size: 20px;
+    width: 70%;
   }
 
   .sub-headline {
@@ -214,6 +218,8 @@ progress::-webkit-progress-value {
 
 @media screen and (max-width: 390px) {
   .main-headline {
+    font-size: 20px;
+    width: 70%;
     top: 15%;
   }
 
