@@ -12,7 +12,7 @@ This is a simple timer application inspired by the Pomodoro Technique, designed 
 - [License](#license)
 
 ## Demo
-You can check out the Pomodoro Clock in action [here](https://your-pomodoro-clock-url.com).
+You can check out the Pomodoro Clock in action <a href="http://jonatantech.github.io/pomodoro-clock/" target="_blank" rel="noreferrer">here.</a>
 
 ![Pomodoro Clock Screenshot](pomodoro.webp)
 
