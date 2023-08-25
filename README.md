@@ -20,6 +20,7 @@ You can check out the Pomodoro Clock in action <a href="http://jonatantech.githu
 - **Pomodoro Timer**: Set work and break intervals for effective time management.
 - **Audio Alerts**: Get audible notifications when a session ends.
 - **Responsive**: Works on both desktop and mobile devices.
+- **Notifications**: Users receive notifications whenever a stage begins or ends.
 
 ## Technologies
 - HTML5
